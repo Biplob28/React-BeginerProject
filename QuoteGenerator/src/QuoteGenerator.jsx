@@ -1,39 +1,29 @@
 import { useEffect, useState } from "react";
 import "./QuoteGenerator.css";
-import axios from "axios"
+import axios from "axios";
 
 function QuoteGenerator() {
-    const Url = "https://api.quotable.io/random";
-const[quote, setQuote] = useState("");
-const[author, setAuthor]= useState("");
+  const Url = "https://api.quotable.io/random";
+  const [quote, setQuote] = useState("");
+  const [author, setAuthor] = useState("");
 
-
-    const fetchQuote  = async()=>{
- 
-        try {
-            
-        const response =await axios.get(Url);
-        const data = await response.data
-        console.log(data);
-        setQuote(data.content);
-        setAuthor(data.author);
-
-
-            
-        } catch (error) {
-            console.log("you got error",error)
-        }
-
-        
-        
+  const fetchQuote = async () => {
+    try {
+      const response = await axios.get(Url);
+      const data = await response.data;
+      console.log(data);
+      setQuote(data.content);
+      setAuthor(data.author);
+    } catch (error) {
+      console.log("you got error", error);
     }
-    useEffect(()=>{
-        fetchQuote();
-
-    },[])
+  };
+  useEffect(() => {
+    fetchQuote();
+  }, []);
   return (
     <div className="main-section">
-      <h2>Project 3: Quote Generator</h2>
+      <h2>Project 3: Quotee Generator</h2>
       <div className="quote-section">
         <div className="quotee">
           <button onClick={fetchQuote}>New Quote</button>
@@ -45,3 +35,4 @@ const[author, setAuthor]= useState("");
   );
 }
 export default QuoteGenerator;
+// this is the quote generator
