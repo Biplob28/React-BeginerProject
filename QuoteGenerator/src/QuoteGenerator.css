@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(237, 200, 54);
+
+}
+.main-section{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.quote-section{
+    margin: 4rem 0;
+    border: 2px solid black;
+    width: 500px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.quotee{
+   display: flex;
+ align-items: center;
+ flex-direction: column;
+ width: 100%;
+}
+.quotee p{
+    width: 80%;
+}
+
+h1,h2,h3,h4{
+    font-weight: 700;
+    font-size: 30px;
+}
+p{
+    font-weight: 600;
+    font-size: 18px;
+
+}
+button{
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
