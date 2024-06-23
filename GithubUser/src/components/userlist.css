@@ -1,0 +1,29 @@
+.lists{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    text-align: center;
+}
+.lists img{
+    height: auto;
+    width: 70px; 
+border-radius: 50%;
+}
+.lists li{
+    list-style: decimal;
+    margin: 20px ;
+    
+}
+.lists li a{
+    text-decoration: none;
+}
+.lists p{
+  
+     color: black;
+     text-align: center;
+
+
+}

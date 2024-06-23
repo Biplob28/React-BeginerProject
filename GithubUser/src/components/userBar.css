@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+
+}
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.submain-section input, button{
+    padding: 10px;
+
+    border-radius: 3px;
+    border: 1px solid black;
+    margin: 10px ;
+}
+button{
+    background-color: blanchedalmond;
+    color: black;
+    cursor: pointer;
+}
