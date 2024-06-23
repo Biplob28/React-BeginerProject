@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+}.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+background-color: aliceblue;
+height: 100vh;
+}
+h2{
+    font-weight: 700;
+    font-size: 30px;
+    background-color: blue;
+    color: white;
+    align-content: center;
+    text-align: center; 
+    height: 80px;
+    width: 500px;
+    margin: 0;
+
+}
+.sub-container{
+    background-color: white;
+    height: 400px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 30px;
+}
+.sub-container p, input{
+    font-size: 20px;
+    width: 80%;
+    align-content: center;
+    align-self: center;
+
+}
+.result-section p{
+    text-align: center;
+    margin-top: 30px;
+}
